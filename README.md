@@ -8,6 +8,17 @@ The phenomenon which happens when we nest multiple callbacks within a function i
     ESCAPE FROM CALLBACK HELL :
 In a nutshell, the usage of promises and async/await serves as a way to escape the callback hell as mentioned above. Apart from these writing comments and splitting the code into separate components can also be tried out. So, currently most the software engineers prefer using the async/await while building applications.
 ```javascript
+function getArticle(id) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Fetching data....");
+      resolve({ id: id, name: "derik" });
+    }, 5000);
+  });
+}
+
+getArticle("1").then(res=> console.log(res))
+
 async function showImages() {
   try {
     const article = await getArticle(10); // these function returns the promises
