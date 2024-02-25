@@ -2,7 +2,7 @@ function init() {
     var name = "Mozilla"; // name is a local variable created by init
     function displayName() {
       // displayName() is the inner function, that forms the closure 
-      // this is the lexical scoping of JavaScript
+      // this is the lexical scoping of JavaScript : the inner function has access to the variables of the outer function
       console.log(name); // use variable declared in the parent function
     }
     displayName();
