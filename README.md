@@ -83,5 +83,27 @@ Memoization in React is a good tool to have in our belts, but it's not something
 
 We have to be aware that in the background all three of these solutions add overhead to our code, too. So if the re-render is caused by tasks that are not computationally heavy, it may be better to solve it in other way or leave it alone.
 
+<h3>forEach vs Map</h3>
+`map()` and `forEach()` are both useful array methods in JavaScript that perform similar actions but have different functionalities. `map()` creates a new array based on the values of an existing array, whereas `forEach()` performs an action on each element of an array without creating a new array.
+
+In terms of performance, `forEach()` is generally faster than `map()` for simple iterations, as it does not create a new array. However, this can vary depending on the specific use case and the amount of data being processed. Therefore, it is important to consider the specific requirements of your code when choosing between `map()` and `forEach()`.
+
+<h3>Find() vs Filter()</h3>
+
+The main differences between above examples is:
+
+-filter() returns an array containing the element that satisfies the condition, but find() returns the element itself that satisfies the condition.
+-In filter(), whole array is iterated despite the fact that the element being searched for is present at the beginning. But in find(), as soon as the element that satisfies the condition is found, it gets returned.
+
+<h3>Introduction to Generator Functions</h3>
+A generator function is a special type of function in JavaScript that allows pausing and resuming its execution during runtime. Unlike regular functions, which run to completion, generator functions can be paused and resumed multiple times, making them particularly useful for dealing with asynchronous operations, handling large datasets, and writing custom iterators.
+
+Generator functions are defined using the function* syntax, and they use the yield keyword to pause the function's execution and produce a value. When a generator function is called, it returns an iterator object, which can be used to control the function's execution.
+
+<h5>The next() Method</h5>
+-The next() method is used to resume the execution of a generator function from where it was paused. It returns an object with two properties: value and done.
+
+-The value property contains the value produced by the yield statement.
+-The done property is a boolean indicating whether the generator has completed (true) or is still running (false).
 
 
