@@ -1,9 +1,9 @@
 // Introduction to Generator Functions
-// A generator function is a special type of function in JavaScript
-//  that allows pausing and resuming its execution during runtime. Unlike
-//   regular functions, which run to completion, generator functions can be
-//    paused and resumed multiple times, making them particularly useful for
-//     dealing with asynchronous operations, handling large datasets, and writing
+//      A generator function is a special type of function in JavaScript
+//      that allows pausing and resuming its execution during runtime. Unlike
+//      regular functions, which run to completion, generator functions can be
+//      paused and resumed multiple times, making them particularly useful for
+//      dealing with asynchronous operations, handling large datasets, and writing
 //      custom iterators.
 
 function* simpleGenerator() {
