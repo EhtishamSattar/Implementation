@@ -106,4 +106,10 @@ Generator functions are defined using the function* syntax, and they use the yie
 -The value property contains the value produced by the yield statement.
 -The done property is a boolean indicating whether the generator has completed (true) or is still running (false).
 
+<h3>Inheritance and Protyping chaining</h3>
+Inheritance and the prototype chain
+In programming, inheritance refers to passing down characteristics from a parent to a child so that a new piece of code can reuse and build upon the features of an existing one. JavaScript implements inheritance by using objects. Each object has an internal link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype and acts as the final link in this prototype chain. It is possible to mutate any member of the prototype chain or even swap out the prototype at runtime, so concepts like static dispatching do not exist in JavaScript.
+
+Read more : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
 
