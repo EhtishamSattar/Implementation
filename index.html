@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My First Webpage</title>
-  </head>
-  <body>
-    <button id="button">Callback Function</button>
-    <button id="fetchUsers">FetchUsers Callback Function </button>
-  </body>
-  <script src="CallbackFunctions.js"></script>
-  <script src="async-await(Promises).js"></script>
+
+<head>
+  <title>My First Webpage</title>
+</head>
+<style>
+  body {
+    padding: 20px;
+    background-color: rgb(214, 211, 212);
+  }
+  
+  div {
+    padding: 20px;
+    background-color: rgb(109, 169, 109);
+    width: max-content;
+    color: black;
+  }
+  
+  span {
+    display: block;
+    padding: 20px;
+    background-color: blue;
+  }
+  </style>
+
+<body>
+  <button id="button">Callback Function</button>
+  <button id="fetchUsers">FetchUsers Callback Function </button>
+  
+  <h3>bind() Function - Preserving <i>this</i></h3>
+  <div id="demo">
+    Demo for bind() function
+  </div>
+  
+  <div id="bubblingId">
+    <span>
+      <button id="bubbling">Click Me!</button>
+    </span>
+  </div>
+  
+</body>
+<script src="BindFunction.js"></script>
+<script src="CallbackFunctions.js"></script>
+<script src="async-await(Promises).js"></script>
+<script src="Eventbubbling.js"></script>
+
 </html>

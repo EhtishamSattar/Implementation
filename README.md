@@ -106,4 +106,32 @@ Generator functions are defined using the function* syntax, and they use the yie
 -The value property contains the value produced by the yield statement.
 -The done property is a boolean indicating whether the generator has completed (true) or is still running (false).
 
+<h3>event.preventDefault() vs event.stopPropagation()</h3>
+The difference between event.preventDefault() and event.stopPropagation() is that the former prevents default actions made by the browser, while the latter prevents the default behaviors of events –propagating up the tree.
+
+These default actions and behaviors are not mistakes, and you do not have to worry about them while you code. But there are scenarios where you want to override them
+
+<h3>Inline vs Normal Fucntion</h3>
+<h5>Javascript</h5>
+
+```javascript
+//Normal
+function add(a, b) {
+  return a + b;
+}
+
+//Inline
+
+var multiply = function(x, y) {
+  return x * y;
+};
+
+// In this case, multiply is a variable that holds an inline function.
+
+// However, with the introduction of arrow functions in ECMAScript 6 (ES6), the distinction between inline and regular functions became less relevant. Arrow functions are a concise way to write anonymous functions:
+
+const square = (x) => x * x;
+
+//In this example, square is a variable that holds an arrow function.
+```
 
