@@ -9,6 +9,11 @@ The original array remains unchanged.
 
 Map vs Filter
 
+Map: if we use just condtional but not perform any operation on the element , it will return the booleans in place of the elements that satidfy the condition
+const num=[1,2,3,4,5,6];
+const num2=num.map(n1=>n1===2);
+console.log(num2); [ false, true, false, false, false, false ]
+
 map() is used to transform each element of the array and produce a new array
 with the transformed values, while filter() is used to select elements from the
 array that satisfy a certain condition and produce a new array containing only those elements.
